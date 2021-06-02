@@ -1,0 +1,19 @@
+[api]
+DLTKDPWTST01 10.10.1.10
+
+[app]
+
+[peer]
+
+[orderer]
+
+[db]
+
+[zookeeper]
+
+[cli]
+
+[tech]
+
+[kafka]
+
