@@ -1,5 +1,5 @@
 [api]
-DLTKDPWTST01 10.10.1.10
+DLTKDPWTST01 ansible_host=10.10.1.10
 
 [app]
 
