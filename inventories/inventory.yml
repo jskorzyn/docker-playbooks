@@ -5,10 +5,7 @@ api:
     host2:
       ansible_host: 10.10.1.11
   vars:
-    container_names:
-      test1
-      test2
-      test3
+    container_names: test1
 app:
 peer:
 orderer:
