@@ -1,7 +1,7 @@
 api:
   hosts:
-    host1:
-      ansible_host: 10.10.1.10
+    dockertest01:
+      ansible_host: 192.168.122.107
       container_names: 
         - test3
         - test4
@@ -9,8 +9,8 @@ peer:
 orderer:
 db:
   hosts:
-    host2:
-      ansible_host: 10.10.1.11
+    dockertest02:
+      ansible_host: 192.168.122.108
       container_names: 
       - test1
       - test2
