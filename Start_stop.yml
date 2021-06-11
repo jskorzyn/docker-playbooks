@@ -9,4 +9,4 @@
       state: started
       image: "{{ item.image }}"
     loop: "{{ container_info | dict2items }}"
-    when: inventory_hostname in groups['api']
+    when: inventory_hostname in groups['db']
