@@ -7,17 +7,17 @@ api:
           image: fedora:latest
         - name: test4
           image: fedora:latest 
-#        - test3
-#        - test4
 peer:
 orderer:
 db:
   hosts:
     dockertest02:
       ansible_host: 192.168.122.108
-      container_names: 
-      - test1
-      - test2
+      container_info:
+        - name: test1
+          image: fedora:latest
+        - name: test2
+          image: fedora:latest 
 app:
 zookeeper:
 cli:
