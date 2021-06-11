@@ -6,7 +6,7 @@
   - name: Start DB container
     docker_container:
       name: "{{ item.name }}"
-      state: started
+      state: "{{ container_status }}"
       image: "{{ item.image }}"
       detach: yes
     loop: "{{ container_info | list }}"
