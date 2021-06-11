@@ -2,9 +2,13 @@ api:
   hosts:
     dockertest01:
       ansible_host: 192.168.122.107
-      container_names: 
-        - test3
-        - test4
+      container_info:
+        - name: test3
+          image: fedora:latest
+        - name: test4
+          image: fedora:latest 
+#        - test3
+#        - test4
 peer:
 orderer:
 db:
