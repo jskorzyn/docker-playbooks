@@ -5,8 +5,8 @@
   tasks:
   - name: Start DB container
     docker_container:
-      name: "{{ item }}"
+      name: "{{ item.name }}"
       state: started
-      image: fedora:latest
-    loop: container_names
-    when: inventory_hostname in groups['db']
+      image: "{{ item.image }}"
+    loop: container_info
+    when: inventory_hostname in groups['api']
