@@ -8,7 +8,8 @@ api:
 peer:
 orderer:
 db:
-  host2:
+  hosts:
+    host2:
       ansible_host: 10.10.1.11
       container_names: 
       - test1
