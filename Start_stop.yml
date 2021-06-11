@@ -8,5 +8,6 @@
       name: "{{ item.name }}"
       state: started
       image: "{{ item.image }}"
+      detach: yes
     loop: "{{ container_info | list }}"
     when: inventory_hostname in groups['db']
