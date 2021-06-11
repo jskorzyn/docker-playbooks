@@ -1,0 +1,11 @@
+---
+- name: Environment Start And Stop Playbook
+  hosts: all
+
+  tasks:
+  - name: Start DB container
+    docker_container:
+      name: "{{ item }}"
+      state: started
+    loop: container_names
+    when: inventory_hostname in groups['db']
