@@ -1,6 +1,7 @@
 ---
 - name: Environment Start And Stop Playbook
   hosts: all
+  gather_facts: no
 
   tasks:
   - name: Start DB container
