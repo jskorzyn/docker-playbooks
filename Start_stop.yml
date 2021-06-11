@@ -7,5 +7,6 @@
     docker_container:
       name: "{{ item }}"
       state: started
+      image: fedora:latest
     loop: container_names
     when: inventory_hostname in groups['db']
