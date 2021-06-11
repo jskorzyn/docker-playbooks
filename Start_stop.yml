@@ -8,5 +8,5 @@
       name: "{{ item.name }}"
       state: started
       image: "{{ item.image }}"
-    loop: "{{ container_info | dict2items }}"
+    loop: "{{ container_info | list }}"
     when: inventory_hostname in groups['db']
