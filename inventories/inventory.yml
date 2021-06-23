@@ -4,9 +4,9 @@ api:
       ansible_host: 192.168.122.107
       container_info:
         - name: test3
-          image: fedora:latest
+#          image: fedora:latest
         - name: test4
-          image: fedora:latest 
+#          image: fedora:latest 
 peer:
 orderer:
 db:
@@ -15,9 +15,9 @@ db:
       ansible_host: 192.168.122.108
       container_info:
         - name: test1
-          image: fedora:latest
+#          image: fedora:latest
         - name: test2
-          image: fedora:latest 
+#          image: fedora:latest 
 app:
 zookeeper:
 cli:
