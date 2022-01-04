@@ -8,6 +8,12 @@ api:
         - name: test4
           image: fedora:latest 
 peer:
+  hosts:
+    invtest:
+      ansible_host: 10.10.10.10
+      testvar01: var01
+      testvar02: var02
+      
 orderer:
 db:
   hosts:
