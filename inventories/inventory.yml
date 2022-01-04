@@ -12,11 +12,8 @@ peer:
     invtest:
       ansible_host: 10.10.10.10
       testvar01: "var01"
-      testvar02: "var02"
-      testvar03: "var03"
-      testvar04: "var04"
-      testvar05: "var05"
-      
+      testvar06: "var06"
+     
 orderer:
 db:
   hosts:
