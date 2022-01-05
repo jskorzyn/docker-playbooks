@@ -1,0 +1,12 @@
+---
+all:
+  children:
+    testgroup01:
+      hosts:
+        host01.example.com:
+        host02.example.com:
+    testgroup02:
+      hosts:
+        host03.example.com:
+        host04.example.com:
+
